@@ -2,12 +2,14 @@
 #include <iostream>
 #include "Balance.h"
 #include "utils.h"
+#include "User.h"
 
 using namespace std ; 
 
 Bank::Bank()
 {
-
+    auto defaultUser = User("Ritesh");
+    users[defaultUser.id] = defaultUser;
 }
 
 Balance Bank::getBalance(int id) {

@@ -15,14 +15,13 @@ public:
 
     string name;
     Balance balance;
+    int id;
 
 private:
     inline int getNewId() {
         static int id = 1;
         return id++;
     } 
-    
-    int id;
 };
 
 #endif

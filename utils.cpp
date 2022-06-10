@@ -37,7 +37,12 @@ Balance utils::inputBalance() {
 Balance utils::convertCentsToBalance(long long cents) {
     Balance finalBalance;
     finalBalance.dollars = cents/100;
-    finalBalance.cents = (cents % 100 + 100) % 100;
+    if ( finalBalance.dollars >= 0 ) {
+        finalBalance.cents = (cents % 100 + 100) % 100;
+    } else {
+        finalBalance.cents = cents % 100;
+    }
+    
     return finalBalance;
 }
 

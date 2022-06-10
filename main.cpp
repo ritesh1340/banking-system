@@ -27,7 +27,7 @@ void handleDebit(int userID, Bank &bank) {
 
 void handleGetBalance(int userID, Bank bank) {
     auto balance = bank.users[userID].balance;
-    cout << "Current balance is: " << balance.dollars << "D " << balance.cents << "C" ; 
+    cout << "Current balance is: " << balance.dollars << "D " << abs(balance.cents) << "C" ; 
     cout << "\n" ; 
 }
 

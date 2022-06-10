@@ -10,6 +10,8 @@
 class Bank
 {
 public:
+    map < int, User > users;
+
     Bank();
     Balance deposit(int, Balance);
     Balance withdraw(int, Balance);
@@ -17,8 +19,6 @@ public:
     ~Bank();
 
 private:
-
-    map < int, User > users;
 
 };
 

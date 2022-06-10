@@ -10,6 +10,7 @@ public:
     utils();
     static Balance convertCentsToBalance(long long);
     static long long convertBalanceToCents(Balance);
+    static Balance inputBalance();
     ~utils();
 
 private:

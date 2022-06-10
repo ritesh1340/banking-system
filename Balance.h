@@ -4,8 +4,8 @@
 #pragma once
 
 struct Balance {
-    int dollars;
-    int cents;
+    int dollars = 0;
+    int cents = 0;
 };
 
 #endif
